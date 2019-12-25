@@ -6,163 +6,224 @@
 get_header();
 ?>
 
-    <div class="banner pl-0 pr-0 bg-banner" style="background: url('<?php if(get_field('banner_background_image')) the_field('banner_background_image'); ?>')">
+    <!-- Start Banner 
+     ============================================= -->
+    <div class="banner-area">
+        <div id="bootcarousel" class="carousel inc-top-heading slide carousel-fade animate_text" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner text-light carousel-zoom">
+                <div class="item active">
+                    <div class="slider-thumb bg-cover" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/site/banner1.png);"></div>
+                    <div class="box-table shadow">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="content">
+                                            <h3 data-animation="animated slideInRight">Get Quality Chiropractic Care. The quick and affordable Adjustment you need!</h3>
+                                            <p data-animation="animated slideInLeft">You want to go to a chiropractor and say, “Can you Just Adjust me?” This is why we are here; because we know you have life. </p>
 
-        <div class="layer-content">
-            <div class="heding-of-banner">
-                <h1 class="first-heading roboto-cn-b text-white text-center"><?php if(get_field('banner_heading')) the_field('banner_heading'); ?></h1>
-                <h2 class="secound-heading text-white roboto-cn-l text-center"><?php if(get_field('banner_sub_heading')) the_field('banner_sub_heading'); ?></h2>
-                <p class="text-center"><a href="<?php site_url(); ?>/resume-submit/" class="btn btn-submit roboto-cn-b text-white bg-orange">Submit Now</a></p>
-            </div>
-        </div>
-
-    </div>
-
-    <section class="hr-manager p-5 pr-0 pl-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="roboto-b color-main-black text-center secound-heading mt-20"><?php if(get_field('h_manager_h')) the_field('h_manager_h'); ?></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-md-6 mob-view">
-                    <img class="img-fluid mt-30" src="<?php if(get_field('right_image')) {$image = get_field('right_image'); echo $image['url'];} ?>" alt="<?php echo $image['alt']; ?>">
-                </div>
-                <div class="col-md-6 col-sm-6 col-lg-6">
-                    <p class="section-para color-gray roboto-r  mt-30"><?php if(get_field('left_content')) the_field('left_content'); ?></p>
-                    <p class="mt-20"><a href="<?php site_url(); ?>/what-hiring-manager-look-for/" class="btn btn-read text-white roboto-r bg-blue">Read More</a></p>
-                </div>
-                <div class="col-md-6 col-sm-6 col-md-6 desk-view">
-                    <img class="img-fluid mt-30" src="<?php if(get_field('right_image')) {$image = get_field('right_image'); echo $image['url'];} ?>" alt="<?php echo $image['alt']; ?>">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="how-it-works p-5 pr-0 pl-0 bg-light-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="roboto-b color-main-black text-center secound-heading"><?php if(get_field('how_it_works')) the_field('how_it_works'); ?></h3>
-                </div>
-            </div>
-            <div class="row arrow-line-indicator">
-                <div class="img-arrow">
-                    <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/lin-arrow.png" alt="">
-                </div>
-                <div class="col-md-4 col-sm-4 col-lg-4">
-                    <div class="step">
-                        <div class="circle-icon">
-                            <i class="fal fa-cloud-upload-alt"></i>
-                        </div>
-                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0"><?php if(get_field('step1_heading')) the_field('step1_heading'); ?></p>
-                        <p class="text-center roboto-r color-555 font-16"><?php if(get_field('step1_sub_heading')) the_field('step1_sub_heading'); ?></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-lg-4">
-                    <div class="step">
-                        <div class="circle-icon">
-                            <i class="fal fa-file-search"></i>
-                        </div>
-                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0"><?php if(get_field('step2_heading')) the_field('step2_heading'); ?></p>
-                        <p class="text-center roboto-r color-555 font-16"><?php if(get_field('step2_sub_heading')) the_field('step2_sub_heading'); ?></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-lg-4">
-                    <div class="step">
-                        <div class="circle-icon">
-                            <i class="fal fa-user-md-chat"></i>
-                        </div>
-                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0"><?php if(get_field('step3_heading')) the_field('step3_heading'); ?></p>
-                        <p class="text-center roboto-r color-555 font-16"><?php if(get_field('step3_sub_heading')) the_field('step3_sub_heading'); ?></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center"><a href="<?php site_url(); ?>/resume-submit/" class="btn btn-submit roboto-cn-b color-blue bg-white mt-30">Submit Now</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-sec p-5 pl-0 pr-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="roboto-b color-main-black text-center secound-heading"><?php if(get_field('about_heading')) the_field('about_heading'); ?></h3>
-                </div>
-            </div>
-            <div class="row mt-40">
-                <div class="col-md-5 mob-view">
-                    <img class="img-responsive mt-20" src="<?php if(get_field('about_right_content')) {$image2 = get_field('about_right_content'); echo $image2['url'];} ?>" alt="<?php echo $image2['alt']; ?>">
-                </div>
-                <div class="col-md-7">
-                    <p class="roboto-r color-gray font-16">
-                        <?php if(get_field('about_left_content')) the_field('about_left_content'); ?>
-                        <p class="mt-20"><a href="<?php site_url(); ?>/about-me" class="btn btn-read text-white roboto-r bg-blue">Read More</a></p>
-                    </p>
-                </div>
-                <div class="col-md-5 desk-view">
-                    <img class="img-responsive mt-20" src="<?php if(get_field('about_right_content')) {$image2 = get_field('about_right_content'); echo $image2['url'];} ?>" alt="<?php echo $image2['alt']; ?>">
-                </div>
-
-            </div>
-        </div>
-    </section>
+                                            <div class="bottom-box" data-animation="animated slideInUp">
+                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md" href="#">Contact Us</a></p>
+                                                <div class="clearfix"></div>
+                                                <div class="arrow-btn">
+                                                    <a href="#bootcarousel" data-slide="prev">
+                                                        <i data-animation="animated slideInUp" class="far fa-arrow-left"></i>
+                                                    </a>
+                                                    <a href="#bootcarousel" data-slide="next">
+                                                        <i data-animation="animated slideInUp" class="far fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
 
 
-    <section class="recent-posts">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="roboto-b color-main-black text-center secound-heading"><?php if(get_field('r_heading')) the_field('r_heading'); ?></h3>
-                </div>
-            </div>
-            <div class="row mt-30">
-
-                <?php
-
-                $args = array(
-                    'post_type' => 'post',
-                    'post_status' => 'publish',
-                    'posts_per_page'=>3,
-                    'order'=>'DESC',
-                    'orderby'=>'ID',
-                );
-
-                ?>
-
-                <?php $loop = new WP_Query($args); ?>
-
-                <?php if($loop->have_posts()){?>
-
-                    <?php while($loop->have_posts()) : $loop->the_post(); ?>
-                        <div class="col-md-4">
-                            <a href="<?php echo get_permalink(); ?>">
-                                <div class="recent-post">
-                                    <div class="img-container">
-                                        <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                                        </div>
                                     </div>
-                                    <h3 class="post-headings roboto-m"><?php $title = get_the_title();  echo $title ?></h3>
-                                    <p class="post-time-date roboto-r"><?php the_date('M.d');?> - <?php the_author(); ?> - <?php comments_number(); ?></p>
-                                    <p class="post-content roboto-r"><?php echo myTruncate(20); ?></p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                    <?php endwhile; ?>
-                    <?php wp_reset_query(); ?>
-
-
-                <?php } ?>
-
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="mt-40 text-center"><a href="<?php site_url(); ?>/blog/" class="btn btn-read text-white roboto-r bg-blue">See All Posts</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-thumb bg-cover" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/site/banner2.png);"></div>
+                    <div class="box-table shadow">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 float-r">
+                                        <div class="content right-content float-r">
+                                            <h3 data-animation="animated slideInRight" class="text-right">Pain is not something You have to live with. Get rid off it for only $25!</h3>
+                                            <p data-animation="animated slideInLeft" class="text-right">We can help you with Migraines, Neck pain, Shoulder pain, knee problems, Back pain, whiplash etc.</p>
+                                            <div class="bottom-box" data-animation="animated slideInUp">
+                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md float-r" href="#">Contact Us</a></p>
+                                                <div class="clearfix"></div>
+                                                <div class="arrows float-r">
+                                                    <a href="#bootcarousel" data-slide="prev">
+                                                        <i data-animation="animated slideInUp" class="far fa-arrow-left"></i>
+                                                    </a>
+                                                    <a href="#bootcarousel" data-slide="next">
+                                                        <i data-animation="animated slideInUp" class="far fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- End Wrapper for slides -->
+
+            <!-- Left and right controls -->
+
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <section class="subscribe-bar full-width inc-shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h4 class="subs-text">SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <div class="input-group">
+                        <input type="email" class="form-control subs-input" placeholder="Enter your email">
+                        <span class="input-group-btn">
+                         <button class="btn subs-btn color-gray" type="submit">Subscribe To Our Newsletter</button>
+                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <!-- Start Our About
+    ============================================= -->
+    <section class="about-area full-width inc-shadow default-padding">
+        <div class="container">
+            <div class="row">
+                <h3 class="head-medium color-green text-center">WHY “JUST ADJUST CHIROPRACTIC?”</h3>
+
+                <!-- Start Our Features -->
+                <div class="col-md-12 text-center about-items">
+                    <div class="row mt-6">
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 single-item">
+                            <div class="item">
+                                <i class="fas fa-alarm-clock"></i>
+                                <h4 class="topic-head color-black text-center mt-1">Quick!Quick!</h4>
+                                <p class="light-para text-center gray-color mt-1">You want to go to a chiropractor and say, “Can you Just Adjust me?” This is why we are here; because we know you have life. </p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 single-item">
+                            <div class="item">
+                                <i class="fas fa-usd-circle"></i>
+                                <h4 class="topic-head color-black text-center mt-1">Budget Friendly</h4>
+                                <p class="light-para text-center gray-color mt-1">Less than the price of most co-pays. You will receive quality, effective care that will not hurt your budget. We charge $25 per visit, no matter what pain you got!</p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 single-item">
+                            <div class="item">
+                                <i class="fas fa-hand-receiving"></i>
+                                <h4 class="topic-head color-black text-center mt-1">We Care</h4>
+                                <p class="light-para text-center gray-color mt-1">Your well being is our top priority.
+                                    If we find that you have a difficult case, we will not hesitate to refer you to the proper health care providers.</p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                    </div>
+                </div>
+                <!-- End Our Features -->
+            </div>
+
+
+            <!-- CHIROPRACTIC -->
+
+
+
+        </div>
+    </section>
+    <!-- End Our About -->
+
+
+
+    <section class="chiropratic full-width inc-shadow default-padding">
+        <div class="container">
+            <h3 class="head-medium color-green text-center">CHIROPRACTIC SERVICES</h3>
+            <div class="row mt-6">
+                <div class="col-md-4 col-sm-6 single-item">
+                    <h4 class="topic-head color-green">The Aches and Pains</h4>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/site/pains.png" class="img-fluid mt-3" alt="">
+                    <p class="light-para color-gray mt-2">We can help you with Migraines, Neck pain, Shoulder pain, knee problems, Back pain or whiplash.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 single-item">
+                    <h4 class="topic-head color-green">Auto Accident Injuries</h4>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/site/extrication.png" class="img-fluid mt-3" alt="">
+                    <p class="light-para color-gray mt-2">Car accidents, if nothing else, are stressful. This also leads to injuries that you may not feel for a few days.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 single-item">
+                    <h4 class="topic-head color-green">Work Related Injuries</h4>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/site/Depositphotos.png" class="img-fluid mt-3" alt="">
+                    <p class="light-para color-gray mt-2">Injuries at work can occur suddenly, such as a slip or fall, or slowly over time with repetitive strain on an area of the body.</p>
+                </div>
+
+            </div>
+            <p class="text-center mt-5"><a href="" class="btn btn-primary btn-green">See Services</a></p>
+        </div>
+    </section>
+
+
+
+    <section class="visit full-width inc-shadow default-padding">
+        <div class="container">
+            <h3 class="head-medium color-green text-center">WHEN SHOULD YOU VISIT JUST ADJUST?</h3>
+            <div class="row mt-6">
+                <div class="col-md-4">
+                    <div class="pain mt-6 float-r wow bounceInLeft" data-wow-delay="300ms">
+                        <h3 class="topic-head-bold color-blue">NECK PAIN</h3>
+                        <p class="regular-para color-gray mt-1">Varies in intensity, and may feel achy or like an electric shock from the neck to the arm.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pain mt-10 ml-5 wow bounceInRight" data-wow-delay="400ms">
+                        <h3 class="topic-head-bold color-blue">WHIPLASH</h3>
+                        <p class="regular-para color-gray mt-1">Whiplash typically occurs when your head is forcefully and quickly thrown backward and then forward.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pain mt-10 float-r wow bounceInLeft" data-wow-delay="600ms">
+                        <h3 class="topic-head-bold color-blue">KNEE PROBLEMS</h3>
+                        <p class="regular-para color-gray mt-1">Knee pain can be severe enough to limit your ability to function normally in daily life. That consistent pain is not something you need to accept.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-4">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/site/body.png" class="body-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="pain mt-6 float-l wow bounceInLeft" data-wow-delay="300ms">
+                        <h3 class="topic-head-bold color-blue">MIGRAINES</h3>
+                        <p class="regular-para color-gray mt-1">It is reported that 9 out of 10 Americans suffer from headaches and migraines</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pain mt-11 mr-5 float-r wow bounceInRight" data-wow-delay="400ms">
+                        <h3 class="topic-head-bold color-blue">BACK PAIN</h3>
+                        <p class="regular-para color-gray mt-1">Common causes of back pain involve disease or injury to the muscles, bones, and/or nerves of the spine. </p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pain mt-11 float-l wow bounceInLeft" data-wow-delay="300ms">
+                        <h3 class="topic-head-bold color-blue">SHOULDER PAIN</h3>
+                        <p class="regular-para color-gray mt-1">Pain in your shoulder can have many causes. You might injure it in a fall or accident, or you could have overdone a chore like painting.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <p class="text-center mt-5"><a href="" class="btn btn-primary btn-green">Learn More</a></p>
         </div>
     </section>
 
