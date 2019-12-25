@@ -10,7 +10,7 @@
                 <h4>Contact us now and schedule your visit for only $25!</h4>
             </div>
             <div class="col-md-3">
-                <p class="text-center contact-btn"><a href="" class="btn btn-primary btn-green bg-white color-green">contact now</a></p>
+                <p class="text-center contact-btn"><a href="<?php site_url(); ?>/contact-us/" class="btn btn-primary btn-green bg-white color-green">contact now</a></p>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -39,21 +39,15 @@
                 <div class="col-md-2">
                     <div class="link">
                         <h4>Menu</h4>
-                        <ul style="margin-top: 20px;">
+                        <ul class="footer-m" style="margin-top: 20px;">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="<?php site_url(); ?>/home/'" class="active">Home</a>
                             </li>
+                            <li><a href="<?php site_url(); ?>/about-us/">About</a></li>
+                            <li><a href="<?php site_url(); ?>/services">Services</a></li>
+                            <li><a href="<?php site_url(); ?>/resources">Resources</a></li>
                             <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                            </li>
-                            <li>
-                                <a href="#">Resources</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
+                                <a href="<?php site_url(); ?>/contact-us/">contact</a>
                             </li>
 
                         </ul>
@@ -99,15 +93,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2019 The Code Frame LLC  |  Designed and developed by <a href="#">The Code Frame</a></p>
+                    <p>&copy; 2019 The Code Frame LLC  |  Designed and developed by <a href="https://thecodeframe.com"> <img style="width: 150px;" src="https://thecodeframe.com/wp-content/uploads/2019/06/logo.png" alt="The Code Frame" class="img-fluid footer-img"> </a></p>
                 </div>
                 <div class="col-md-6 text-right link">
                     <ul>
                         <li>
-                            <a href="#"><i class="fa fa-facbook"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/Thecodeframe/" class="social-link"><i class="fab fa-facebook-square"></i></a>
                         </li>
                         <li>
-                            <a href="#">License</a>
+                            <a target="_blank" href="https://www.alignable.com/saint-george-ut/the-code-frame" class="social-link"> <img src="https://thecodeframe.com/wp-content/themes/tcf-theme/assets/img/static/unknown.png" alt=""> </a>
+
                         </li>
                     </ul>
                 </div>

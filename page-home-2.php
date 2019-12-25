@@ -25,7 +25,7 @@ get_header();
                                                 ¡Deshazte de él por solo $25!</h3>
                                             <p data-animation="animated slideInLeft" class="text-right">Podemos ayudarlo con migrañas, dolor de cuello, dolor de hombro, rodilla problemas, dolor de espalda, latigazo cervical, etc.</p>
                                             <div class="bottom-box" data-animation="animated slideInUp">
-                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md float-r" href="#">CONTACTENOS</a></p>
+                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md float-r" href="<?php site_url(); ?>/contact-us/">CONTACTENOS</a></p>
                                                 <div class="clearfix"></div>
                                             </div>
                                         </div>

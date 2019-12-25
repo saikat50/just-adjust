@@ -54,7 +54,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="<?php site_url(); ?>/home/">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/site/logo.png" class="logo" alt="Logo">
                         </a>
                     </div>
@@ -70,7 +70,7 @@
                             <li><a href="<?php site_url(); ?>/services">Services</a></li>
                             <li><a href="<?php site_url(); ?>/resources">Resources</a></li>
                             <li>
-                                <a href="contact.html">contact</a>
+                                <a href="<?php site_url(); ?>/contact-us/">contact</a>
                             </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->

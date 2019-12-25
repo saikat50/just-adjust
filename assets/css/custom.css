@@ -279,6 +279,9 @@ nav.navbar.bootsnav ul.nav > li > a:hover{
 .pb-70{
     padding-bottom: 70px;
 }
+.footer-m li a:hover{
+    color: #037640;
+}
 
 @media(max-width: 767px){
     .pain{

@@ -24,7 +24,7 @@ get_header();
                                             <p data-animation="animated slideInLeft">You want to go to a chiropractor and say, “Can you Just Adjust me?” This is why we are here; because we know you have life. </p>
 
                                             <div class="bottom-box" data-animation="animated slideInUp">
-                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md" href="#">Contact Us</a></p>
+                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md" href="<?php site_url(); ?>/contact-us/">Contact Us</a></p>
                                                 <div class="clearfix"></div>
                                                 <div class="arrow-btn">
                                                     <a href="#bootcarousel" data-slide="prev">
@@ -55,7 +55,7 @@ get_header();
                                             <h3 data-animation="animated slideInRight" class="text-right">Pain is not something You have to live with. Get rid off it for only $25!</h3>
                                             <p data-animation="animated slideInLeft" class="text-right">We can help you with Migraines, Neck pain, Shoulder pain, knee problems, Back pain, whiplash etc.</p>
                                             <div class="bottom-box" data-animation="animated slideInUp">
-                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md float-r" href="#">Contact Us</a></p>
+                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md float-r" href="<?php site_url(); ?>/contact-us/">Contact Us</a></p>
                                                 <div class="clearfix"></div>
                                                 <div class="arrows float-r">
                                                     <a href="#bootcarousel" data-slide="prev">
@@ -87,12 +87,17 @@ get_header();
             <div class="row">
                 <div class="col-md-9">
                     <h4 class="subs-text">SUBSCRIBE TO OUR NEWSLETTER</h4>
-                    <div class="input-group">
-                        <input type="email" class="form-control subs-input" placeholder="Enter your email">
-                        <span class="input-group-btn">
-                         <button class="btn subs-btn color-gray" type="submit">Subscribe To Our Newsletter</button>
-                         </span>
-                    </div>
+                    <?php
+                    if ( have_posts() ) {
+                        while ( have_posts() ) {
+                            the_post();
+                            the_content();
+                            //
+                            // Post Content here
+                            //
+                        } // end while
+                    } // end if
+                    ?>
                 </div>
             </div>
             <div class="clearfix"></div>
