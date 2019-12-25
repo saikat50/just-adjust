@@ -239,7 +239,7 @@ get_header();
                 </div>
                 <div class="modal-body">
                     <h4 class="text-center modal-txt">¿Hablas Español?</h4>
-                    <p class="text-center"><a href="" class="btn btn-primary bg-green modal-btn">PRESSIONE AQUI</a></p>
+                    <p class="text-center"><a href="<?php site_url(); ?>/home-sp/" class="btn btn-primary bg-green modal-btn">PRESSIONE AQUI</a></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

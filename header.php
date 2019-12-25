@@ -31,6 +31,7 @@
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/style.css" rel="stylesheet">
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/responsive.css" rel="stylesheet" />
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/custom.css" rel="stylesheet" />
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/blog.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
     <!-- ========== Google Fonts ========== -->
@@ -66,8 +67,8 @@
                                 <a href="<?php site_url(); ?>/home/'" class="active">Home</a>
                             </li>
                             <li><a href="<?php site_url(); ?>/about-us/">About</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Resources</a></li>
+                            <li><a href="<?php site_url(); ?>/services">Services</a></li>
+                            <li><a href="<?php site_url(); ?>/resources">Resources</a></li>
                             <li>
                                 <a href="contact.html">contact</a>
                             </li>

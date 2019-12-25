@@ -14,16 +14,17 @@
 
 get_header();
 ?>
-    <div class="banner pl-0 pr-0 bg-banner breadcum_banner" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/assets/images/blog-banner.jpg')">
-
-        <div class="layer-content">
-            <div class="heding-of-banner">
-                <h2 class="roboto-m breadcum-txt-head text-white"><?php the_archive_title(); ?></h2>
-                <p class="text-center"><a class="roboto-cn-r font-16 color-main-black" href="">Home</a> <span class="rotate-1" style="font-size: 10px">/</span> <span class="roboto-cn-r font-16 color-main-black">Blog</span></p>
+    <section class="bredcum" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/site/bone.png)">
+        <div class="layer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="bredcum-text text-center">About Just Adjust</h2>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
+    </section>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main pb-70 pt-70">

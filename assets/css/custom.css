@@ -262,6 +262,23 @@ nav.navbar.bootsnav ul.nav > li > a:hover{
 .modal-footer{
     border-top: none;
 }
+.resources-bredcum{
+    height: 510px;
+    margin-bottom: 60px;
+}
+.resources-bredcum h2{
+    line-height: 510px;
+    text-align: left;
+}
+.resources-bredcum .layer{
+    background: rgba(3,118,64, 0.2)!important;
+}
+.blog-title a:hover{
+    color: #037640!important;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
 
 @media(max-width: 767px){
     .pain{
@@ -298,6 +315,23 @@ nav.navbar.bootsnav ul.nav > li > a:hover{
     .services-list p{
         margin-top: 20px;
     }
-   
+    .resources-bredcum{
+        height: 265px;
+    }
+    .resources-bredcum h2{
+        line-height: 265px;
+    }
+    .bredcum-text{
+        font-size: 42px;
+    }
+    .blog-title{
+        font-size: 20px!important;
+    }
+    .contact-bar h4 {
+        font-size: 26px;
+    }
+    .services_head {
+        font-size: 32px;
+    }
 
 }

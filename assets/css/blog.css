@@ -47,10 +47,10 @@
     padding-top: 10px;
 }
 .rpwwt-widget .rpwwt-post-title:hover{
-    color: #FED61F;
+    color: #037640;
 }
 .widget_categories a:hover{
-    color: #FED61F;
+    color: #037640;
 }
 .recent-posts-extended .rpwe-title a {
     color: #768791;
@@ -92,7 +92,7 @@
     margin-top: 3px;
 }
 .widget .heart-this-popular-posts a:hover{
-    color: #fad42e;
+    color: #037640;
 }
 
 .blog-banner {
@@ -241,7 +241,7 @@ article header {
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #869791;
+    background: #037640;
 }
 
 .owl-nav .owl-prev,
@@ -326,7 +326,7 @@ article header {
     width: 50px;
 }
 .comment-line{
-    width: 99px!important;
+    width: 128px!important;
 }
 .heart-this-wrap .heart-this {
     color: #707070!important;
@@ -343,12 +343,12 @@ article header {
     margin-left: -9px!important;
 }
 .blog-title{
-    font-size: 28px;
-    color: #080808;
+    font-size: 30px;
+    color: #263843;
     margin-top: 0px;
-    font-family: 'Roboto-cn-b';
     margin-bottom: 20px;
     position: relative;
+    font-weight: 700;
 }
 .blog-title:after{
     position: absolute;
@@ -356,13 +356,13 @@ article header {
     left: 0;
     width: 50px;
     height: 2px;
-    background:
-            #FED61F;
+    background: #037640;
     content: '';
 }
 .blog-text p{
-    font-size: 16px;
-    font-family: 'Roboto-r';
+    font-size: 18px;
+    color: #768791;
+    font-weight: 400;
 }
 .date-time{
     margin-top: 15px;
@@ -387,13 +387,13 @@ article header {
     cursor: pointer;
 }
 .share-icon p:hover .fa-share-alt{
-    color: #fad42e!important;
+    color: #037640!important;
 }
 .categories-line a{
     font-family: 'Roboto-r';
 }
 .categories-line a:hover{
-    color: #fad42e!important;
+    color: #037640!important;
 }
 .categories-line a{
     margin-right: 5px;
@@ -402,7 +402,7 @@ article header {
     position: relative;
     overflow-x: hidden;
     height: 47px;
-    margin-top: -15px;
+    margin-top: 0px;
     width: auto;
     overflow-y: hidden;
 }
@@ -450,6 +450,10 @@ article header {
     height: 380px;
     width: 100%;
 }
+.heart-this-wrap .heart-this{
+    height: 72px!important;
+}
+
 
 @media(max-width: 767px) {
     .bottom-bar li:last-child{
