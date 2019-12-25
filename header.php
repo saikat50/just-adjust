@@ -15,7 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Your Resume Story</title>
+    <title>Just Adjust</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -63,9 +63,9 @@
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
                             <li>
-                                <a href="#" class="active">Home</a>
+                                <a href="<?php site_url(); ?>/home/'" class="active">Home</a>
                             </li>
-                            <li><a href="">About</a></li>
+                            <li><a href="<?php site_url(); ?>/about-us/">About</a></li>
                             <li><a href="">Services</a></li>
                             <li><a href="">Resources</a></li>
                             <li>
