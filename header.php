@@ -22,8 +22,6 @@
     <!-- ========== Start Stylesheet ========== -->
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/fonts/css/all.css" rel="stylesheet" />
-    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/flaticon-set.css" rel="stylesheet" />
-    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/magnific-popup.css" rel="stylesheet" />
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/animate.css" rel="stylesheet" />

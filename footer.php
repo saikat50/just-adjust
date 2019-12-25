@@ -119,18 +119,8 @@
 ============================================= -->
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery-1.12.4.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/equal-height.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery.appear.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery.easing.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/modernizr.custom.13711.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/owl.carousel.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/wow.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/progress-bar.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/isotope.pkgd.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/count-to.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/YTPlayer.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/bootsnav.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/main.js"></script>
 <script>
