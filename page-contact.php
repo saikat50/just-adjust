@@ -76,7 +76,7 @@ get_header();
 
             <div class="row mt-2">
                 <div class="col-md-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153517.8341007107!2d-113.79041821069737!3d39.47820038518214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874c6bc78f13f9cd%3A0xbddf4aa56cd7463f!2sUtah%2C%20USA!5e0!3m2!1sen!2sbd!4v1577261231631!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12727.326334624775!2d-113.587898!3d37.1091263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xac95a80ccedd02af!2sJust%20Adjust%20Chiropractic!5e0!3m2!1sen!2sbd!4v1577454915027!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
 

@@ -24,7 +24,7 @@ get_header();
                                             <p data-animation="animated slideInLeft">You want to go to a chiropractor and say, “Can you Just Adjust me?” This is why we are here; because we know you have life. </p>
 
                                             <div class="bottom-box" data-animation="animated slideInUp">
-                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md" href="<?php site_url(); ?>/contact-us/">Contact Us</a></p>
+                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md" href="<?php echo home_url($wp->request); ?>/contact-us/">Contact Us</a></p>
                                                 <div class="clearfix"></div>
                                                 <div class="arrow-btn">
                                                     <a href="#bootcarousel" data-slide="prev">
@@ -55,7 +55,7 @@ get_header();
                                             <h3 data-animation="animated slideInRight" class="text-right">Pain is not something You have to live with. Get rid off it for only $25!</h3>
                                             <p data-animation="animated slideInLeft" class="text-right">We can help you with Migraines, Neck pain, Shoulder pain, knee problems, Back pain, whiplash etc.</p>
                                             <div class="bottom-box" data-animation="animated slideInUp">
-                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md float-r" href="<?php site_url(); ?>/contact-us/">Contact Us</a></p>
+                                                <p class="contact-slide-btn"><a class="btn btn-light btn-md float-r" href="<?php echo home_url($wp->request); ?>/contact-us/">Contact Us</a></p>
                                                 <div class="clearfix"></div>
                                                 <div class="arrows float-r">
                                                     <a href="#bootcarousel" data-slide="prev">
@@ -180,7 +180,7 @@ get_header();
                 </div>
 
             </div>
-            <p class="text-center mt-5"><a href="" class="btn btn-primary btn-green">See Services</a></p>
+            <p class="text-center mt-5"><a href="<?php echo home_url($wp->request); ?>/services/" class="btn btn-primary btn-green">See Services</a></p>
         </div>
     </section>
 
@@ -228,7 +228,7 @@ get_header();
                     <div class="clearfix"></div>
                 </div>
             </div>
-            <p class="text-center mt-5"><a href="" class="btn btn-primary btn-green">Learn More</a></p>
+            <p class="text-center mt-5"><a href="<?php echo home_url($wp->request); ?>/services/" class="btn btn-primary btn-green">Learn More</a></p>
         </div>
     </section>
 
@@ -244,7 +244,7 @@ get_header();
                 </div>
                 <div class="modal-body">
                     <h4 class="text-center modal-txt">¿Hablas Español?</h4>
-                    <p class="text-center"><a href="<?php site_url(); ?>/home-sp/" class="btn btn-primary bg-green modal-btn">PRESSIONE AQUI</a></p>
+                    <p class="text-center"><a href="<?php echo home_url($wp->request); ?>/home-sp/" class="btn btn-primary bg-green modal-btn">PRESSIONE AQUI</a></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

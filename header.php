@@ -9,6 +9,8 @@
  * @package yourresumestory.com
  */
 
+global $wp;
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -62,13 +64,13 @@
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
                             <li>
-                                <a href="<?php site_url(); ?>/home/'" class="active">Home</a>
+                                <a href="<?php echo home_url($wp->request); ?>/home/'" class="active">Home</a>
                             </li>
-                            <li><a href="<?php site_url(); ?>/about-us/">About</a></li>
-                            <li><a href="<?php site_url(); ?>/services">Services</a></li>
-                            <li><a href="<?php site_url(); ?>/resources">Resources</a></li>
+                            <li><a href="<?php echo home_url($wp->request); ?>/about-us/">About</a></li>
+                            <li><a href="<?php echo home_url($wp->request); ?>/services">Services</a></li>
+                            <li><a href="<?php echo home_url($wp->request); ?>/resources">Resources</a></li>
                             <li>
-                                <a href="<?php site_url(); ?>/contact-us/">contact</a>
+                                <a href="<?php echo home_url($wp->request); ?>/contact-us/">contact</a>
                             </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->

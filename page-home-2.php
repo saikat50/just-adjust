@@ -195,6 +195,11 @@ get_header();
         </div>
     </section>
 
+    <script>
+        $(document).read(function () {
+           $(".call-to-action").html("Yes");
+        });
+    </script>
 
 <?php
 get_footer();
